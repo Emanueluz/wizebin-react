@@ -7,8 +7,22 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 export default function UserInput(){
-    const [value, onChangeText] = React.useState('');
-    const [value1, onChangeText1] = React.useState('');
+    const [usernameValue, onChangeText] = React.useState('');
+    const [passwordValue, onChangeText1] = React.useState('');
+
+    const styles = StyleSheet.create({
+        inputStyle: {
+            height: 40,
+            borderColor: '#0b772f',
+            borderWidth: 1,
+            width: 250,
+            paddingLeft: 15,
+            borderRadius: 5, 
+            color: 'white',
+            margin: 5
+
+        }
+    }) 
     
     return(
         <KeyboardAvoidingView
@@ -17,16 +31,16 @@ export default function UserInput(){
             <TextInput
             textContentType="emailAddress"
             placeholder='Insert your Username here'
-            style={{ height: 40, borderColor: '#0b772f', borderWidth: 1, width: 250, paddingLeft: 15, borderRadius: 5, color: 'white' }}
+            style={styles.inputStyle}
             onChangeText={text => onChangeText(text)}
-            value={value}
+            value={usernameValue}
             />
             <TextInput
             textContentType="password"
             placeholder='Insert your Password here'
-            style={{ height: 40, borderColor: '#0b772f', borderWidth: 1, width: 250, paddingLeft: 15, borderRadius: 5, marginTop: 15, color: 'white' }}
+            style={styles.inputStyle}
             onChangeText={text => onChangeText1(text)}
-            value={value1}
+            value={passwordValue}
             />
             <Button
             icon={
@@ -34,7 +48,7 @@ export default function UserInput(){
                 name="arrow-right"
                 size={15}
                 color="white"
-                />
+            />
             }
             title=' LOGIN'
             buttonStyle={{ backgroundColor: '#79b1b3', marginTop: 10, width: 250, borderRadius: 5 }}
