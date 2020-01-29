@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image, StyleSheet } from 'react-native';
+import logoImage from '../../assets/images/logo-white.png'
 
 
 
@@ -7,11 +8,10 @@ export default function Header(){
 
     const styles = StyleSheet.create({
         stretch: {
-            width: 230,
-            height: 150,
-            marginBottom: 15,
+            width: 200,
+            height: 80,
+            marginBottom: 30,
             marginTop: 30,
-            marginLeft: 60,
             resizeMode: 'stretch'
         }
     })
@@ -19,7 +19,7 @@ export default function Header(){
     return(
         <Image
             style={styles.stretch}
-            source={require('../assets/images/logo-white.png')}
+            source={logoImage}
         />
     )
 }
