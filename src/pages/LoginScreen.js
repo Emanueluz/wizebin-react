@@ -3,11 +3,11 @@ import { StyleSheet, View, TextInput, KeyboardAvoidingView, ImageBackground } fr
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Button } from 'react-native-elements';
 // importando componentes
-import Header from './src/components/Header';
-import UserInput from './src/components/UserInput';
-import ForgotPassword from './src/components/ForgotPassword'
+import Header from '../components/Header';
+import UserInput from '../components/UserInput';
+import ForgotPassword from '../components/ForgotPassword'
 // importando imagens
-import bgLogin from './assets/images/background-login.jpg'
+import bgLogin from '../../assets/images/background-login.jpg'
 
 
 export default function App() {
