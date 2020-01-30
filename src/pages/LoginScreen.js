@@ -1,27 +1,24 @@
 import React from 'react';
 import { StyleSheet, View, TextInput, KeyboardAvoidingView, ImageBackground } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import { Button } from 'react-native-elements';
 // importando componentes
 import Header from '../components/Header';
 import UserInput from '../components/UserInput';
-import ForgotPassword from '../components/ForgotPassword'
+import ForgotPassword from '../components/ForgotPassword';
+import Form from '../components/Form';
 // importando imagens
 import bgLogin from '../../assets/images/background-login.jpg'
+import LoginButton from '../components/LoginButton';
 
 
 export default function App() {
   return (
-        <ImageBackground source={bgLogin} style={{ width: '100%', height: '100%', flex: 1}}>
-          <KeyboardAvoidingView 
-              behavior={'height'}
-              style={styles.container}
-              >
+        <ImageBackground source={bgLogin} style={{ width: '100%', height: '100%', flex: 1, resizeMode: 'cover'}}>
+          <KeyboardAvoidingView behavior={'height'} style={styles.container}>
             <Header/>
-            <UserInput/>
+            <Form></Form>
+            <LoginButton/>
             <ForgotPassword></ForgotPassword>
           </KeyboardAvoidingView>
-          
         </ImageBackground>
         
   )

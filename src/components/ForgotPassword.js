@@ -6,18 +6,16 @@ export default function ForgotPassword() {
     const styles = StyleSheet.create({
         container: {
             marginTop: 15,
-            justifyContent: 'center',
-            alignContent: 'center'
         }
     })
     
     return(
         <View style={styles.container}>
-            <Text style={{ color: 'white' }}>Esqueceu sua senha?</Text>
+            <Text style={{ color: 'white' }}>Forgot password?</Text>
             <Text style={{ color: 'white', textDecorationLine: "underline" }}
-             onPress={() => Linking.openURL('http://google.com')}
+             onPress={() => Linking.openURL('http://optero.com.br')}
             >
-                {'\t\t\t\t\t'}clique aqui!
+                {'\t\t\t\t'} click here!
             </Text>
         </View>
     )

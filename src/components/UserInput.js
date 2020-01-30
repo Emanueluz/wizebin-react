@@ -1,75 +1,69 @@
-import React from 'react';
-import { StyleSheet, TextInput, View } from 'react-native';
-import { Button } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import React, { Component } from 'react';
+import { StyleSheet, TextInput, View, Image } from 'react-native';
+import PropTypes from 'prop-types'
   
-export default function UserInput(){
-    const [usernameValue, onChangeText] = React.useState('');
-    const [passwordValue, onChangeText1] = React.useState('');
-
-    // changeLoggedState = () => {
-    //     loggedIn ? false : true
-    // }
-    
-
-    const styles = StyleSheet.create({
-        inputStyle: {
-            height: 40,
-            borderColor: '#fff',
-            borderWidth: 1,
-            width: 250,
-            paddingLeft: 15,
-            borderRadius: 5, 
-            backgroundColor: 'gray',
-            opacity: 0.75,
-            color: 'white',
-            margin: 5
-        },
-        loginButton: {
-            backgroundColor: '#023744',
-            marginLeft: 5.5,
-            marginTop: 10,
-            width: 250,
-            borderRadius: 5,
-            borderColor: '#011216', 
-            borderWidth: 1
-        }
-    }) 
-    
+export default class UserInput extends Component {
+  render(){
     return(
-        <View style={styles.container}>
-            <View>
+        <View style={styles.inputWrapper}>
+           <Image source={this.props.source} style={styles.inlineImg} />
                 <TextInput
-                    textContentType="emailAddress"
-                    placeholder='Insert your Username here'
-                    style={styles.inputStyle}
-                    autoFocus={false}
-                    onChangeText={text => onChangeText(text)}
-                    value={usernameValue}
-                    keyboardType="email-address"
-                />
-                <TextInput
+                    style={styles.input}
                     textContentType="password"
-                    placeholder='Insert your Password here'
-                    style={styles.inputStyle}
-                    onChangeText={text => onChangeText1(text)}
-                    value={passwordValue}
-                    secureTextEntry={true}
+                    placeholder={this.props.placeholder}
+                    secureTextEntry={this.props.secureTextEntry}
+                    autoCorrect={this.props.autoCorrect}
+                    autoCapitalize={this.props.autoCapitalize}
+                    returnKeyType={this.props.returnKeyType}
+                    placeholderTextColor="white"
+                    underlineColorAndroid="transparent"
                 />
             </View>
-            <View>
-                <Button
-                    icon={
-                        <Icon
-                            name="arrow-right"
-                            size={15}
-                            color="white"
-                        />
-                    }
-                    title=' LOGIN'
-                    buttonStyle={styles.loginButton}
-                />
-            </View>
-        </View>
-    )
+            // <View>
+            //     <Button
+            //         icon={
+            //             <Icon
+            //                 name="arrow-right"
+            //                 size={15}
+            //                 color="white"
+            //             />
+            //         }
+            //         title=' LOGIN'
+            //         buttonStyle={styles.loginButton}
+            //     />
+            // </View>
+    )}
+}
+
+const styles = StyleSheet.create({
+    input: {
+      backgroundColor: 'rgba(255, 255, 255, 0.4)',
+      width: 250,
+      height: 40,
+      marginHorizontal: 20,
+      paddingLeft: 45,
+      borderRadius: 12,
+      color: '#ffffff',
+    },
+    inputWrapper: {
+        marginBottom: 10
+    },
+    inlineImg: {
+      position: 'absolute',
+      zIndex: 99,
+      width: 22,
+      height: 22,
+      left: 35,
+      top: 9,
+    },
+  });
+  
+UserInput.propTypes = {
+    source: PropTypes.number.isRequired,
+    placeholder: PropTypes.string.isRequired,
+    secureTextEntry: PropTypes.bool,
+    autoCorrect: PropTypes.bool,
+    autoCapitalize: PropTypes.string,
+    returnKeyType: PropTypes.string, 
+
 }
