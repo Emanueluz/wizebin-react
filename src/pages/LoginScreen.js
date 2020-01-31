@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import UserInput from '../components/UserInput';
 import ForgotPassword from '../components/ForgotPassword';
 import Form from '../components/Form';
+
 // importando imagens
 import bgLogin from '../../assets/images/background-login.jpg'
 import LoginButton from '../components/LoginButton';
