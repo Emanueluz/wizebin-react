@@ -4,14 +4,17 @@ import {
     StyleSheet,
 } from 'react-native'
 import { Button } from 'react-native-elements'
+import { withNavigation } from 'react-navigation'
 
-export default class Footer extends Component {
+class Footer extends Component {
     render(){
+        const { navigate } = this.props.navigation;
         return(
             <View style={styles.container}>
                 <Button
                     buttonStyle={{ backgroundColor: '#143a41' }}
                     title="SAIR"
+                    onPress={() => navigate('Login')}
                 />
             </View>
         )
@@ -27,3 +30,5 @@ const styles = StyleSheet.create({
         marginBottom: null
     }
 })
+
+export default withNavigation(Footer);

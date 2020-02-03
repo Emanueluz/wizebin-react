@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Navigator } from 'react-native';
 import { Button } from 'react-native-elements'
-import Icon from 'react-native-vector-icons/FontAwesome'
+import Icon from 'react-native-vector-icons/FontAwesome';
+import { withNavigation } from 'react-navigation'
 
 
-export default class LoginButton extends Component{
+class LoginButton extends Component{
     render(){
+        const { navigate } = this.props.navigation;
         return(
             <Button
                 icon={
@@ -17,7 +19,7 @@ export default class LoginButton extends Component{
                 }
                 title=' LOGIN'
                 buttonStyle={styles.loginButton}
-                onPress={() => this.props.navigation.navigate('HomeScreen')}>
+                onPress={() => navigate('Home')}>
             </Button>
         )
     }
@@ -34,3 +36,5 @@ const styles = StyleSheet.create({
         zIndex: 100,
     }
 })
+
+export default withNavigation(LoginButton);
