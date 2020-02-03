@@ -4,12 +4,12 @@ Hey guys. In this repo I'm just improving my React Native skills by trying to bu
 
 ## Table of Contents
 
-- [Screenshots](#screenshots)
-- [To Do](#to-do)
-- [Install](#install)
-- [Usage](#usage)
-- [Notes](#notes)
-- [Social Media](#social-media)
+- [Screenshots](#screenshots-camera)
+- [To Do](#to-do-pushpin)
+- [Install](#install-floppy-disk)
+- [Usage](#usage-computer)
+- [Notes](#notes-notebook)
+- [Social Media](#social-media-bust-in-silhouette)
 
 ## Screenshots :camera:
 
