@@ -24,7 +24,7 @@ class Footer extends Component {
 const styles = StyleSheet.create({
     container: {
         width: '100%',
-        height: 180,
+        height: 119,
         justifyContent: 'center',
         alignContent: 'flex-end',
         marginBottom: null

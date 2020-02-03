@@ -8,7 +8,7 @@ import { Button } from 'react-native-elements'
 import { Card } from 'react-native-elements'
 import PropTypes from 'prop-types'
 
-export default class ButtonDale extends React.Component {
+export default class ButtonCard extends React.Component {
     render() {
         return (
         <View style={styles.container}>
@@ -50,12 +50,12 @@ const styles = StyleSheet.create({
         backgroundColor: '#0e635c'
     },
     cardStyle: {
-        width: 300, 
-        height: 200, 
+        width: 315, 
+        height: 215, 
         backgroundColor: '#143a41', 
         justifyContent: 'center',
         borderWidth: 3,
-        borderColor: 'orange'
+        borderColor: '#052129',
     },
     
   });

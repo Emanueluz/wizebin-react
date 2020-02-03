@@ -3,12 +3,13 @@ import {
     View,
     Text,
     BackHandler,
-    ToastAndroid
+    ImageBackground
 } from 'react-native'
 import Header from '../components/HomeComponents/Header'
-import ButtonDale from '../components/HomeComponents/Button'
+import ButtonCard from '../components/HomeComponents/ButtonCard'
 import Footer from '../components/HomeComponents/Footer'
 import { withNavigation } from 'react-navigation';
+import bgHomeScreen from '../../assets/images/city-bg.jpeg'
 
 class HomeScreen extends React.Component {
     static navigationOptions = ({ navigation }) => ({
@@ -29,18 +30,21 @@ class HomeScreen extends React.Component {
     
     render(){
         return(
-        <View>
-            <Header></Header>
-            <ButtonDale
-                cardTitle={'Realizar Rotas'}
-                title={'ROTAS'}
-            />
-            <ButtonDale
-                cardTitle={'Realizar Sincronização'}
-                title={'SYNC'}
-            />
-            <Footer></Footer>
-        </View>
+        <ImageBackground source={bgHomeScreen} style={{ width: '100%', height: '100%', flex: 1, resizeMode: 'cover'}}>
+            <View>
+                <Header></Header>
+                <ButtonCard
+                    cardTitle={'Realizar Rotas'}
+                    title={'ROTAS'}
+                />
+                <ButtonCard
+                    cardTitle={'Realizar Sincronização'}
+                    title={'SYNC'}
+                />
+                <Footer></Footer>
+            </View>
+        </ImageBackground>
+
         )
     }
 }
