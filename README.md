@@ -1,14 +1,13 @@
-# Wizebin App
+# Wizebin App :truck:
 
 Hey guys. In this repo I'm just improving my React Native skills by trying to build an app. I'm also using Firebase to storage the data and to authenticate my users
 
-## Screenshots
+## Screenshots :camera:
 
 ![login](login-page.jpg)
 ![home](home-page.jpg)
 
-
-## Install
+## Install :floppy_disk:
 
 * Check if you have npm in your computer, and then install the dependencies using:
 
@@ -16,7 +15,7 @@ Hey guys. In this repo I'm just improving my React Native skills by trying to bu
 $npm install
 ```
 
-## Usage
+## Usage :computer:
 
 * To run this project in your device, you should first download Expo on Playstore or  Apple Store. Then, you should install expo in your computer using this command below:
 
@@ -30,11 +29,11 @@ $npm install -g expo-cli
 $npm start or $expo start
 ```
 
-## Notes
+## Notes :notebook:
 
 * Well, the project isn't finished yet and I'm using this to practice both my English and programming skills. So if you want to give me any tip or contact me to make a constructive criticism, contact me on my social media
 
-## Social Media
+## Social Media :bust_in_silhouette:
 
 * My name: Wesley Marques Pizetta
 * E-mail: wesleypizetta@hotmail.com
