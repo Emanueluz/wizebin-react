@@ -6,10 +6,10 @@ Hey guys. In this repo I'm just improving my React Native skills by trying to bu
 
 - [Screenshots](#screenshots-camera)
 - [To Do](#to-do-pushpin)
-- [Install](#install-floppy-disk)
+- [Install](#install-floppy_disk)
 - [Usage](#usage-computer)
 - [Notes](#notes-notebook)
-- [Social Media](#social-media-bust-in-silhouette)
+- [Social Media](#social-media-bust_in_silhouette)
 
 ## Screenshots :camera:
 
