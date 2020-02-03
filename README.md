@@ -7,6 +7,19 @@ Hey guys. In this repo I'm just improving my React Native skills by trying to bu
 ![login](login-page.jpg)
 ![home](home-page.jpg)
 
+## To Do:
+
+- [x] ~~Create Login Screen~~
+- [x] ~~Create Home Screen~~
+- [ ] Create "Rotas" Screen
+- [ ] Add an action to the "Sync" button
+- [x] ~~Navigate between screens~~
+- [ ] Implement Firebase auth
+- [ ] Create a "Show Password" button on Login Screen
+- [ ] Use Animations
+
+* Note: this project is in progress, not finished yet
+
 ## Install :floppy_disk:
 
 * Check if you have npm in your computer, and then install the dependencies using:
