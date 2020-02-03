@@ -2,9 +2,11 @@
 
 Hey guys. In this repo I'm just improving my React Native skills by trying to build an app. I'm also using Firebase to storage the data and to authenticate my users
 
-## Screenshot
+## Screenshots
 
-![alt text](https://imgur.com/a/blr1Fay)
+![login](login-page.jpg)
+![home](home-page.jpg)
+
 
 ## Install
 
