@@ -2,6 +2,10 @@
 
 Hey guys. In this repo I'm just improving my React Native skills by trying to build an app. I'm also using Firebase to storage the data and to authenticate my users
 
+## Screenshot
+
+![alt text](https://imgur.com/a/blr1Fay)
+
 ## Install
 
 * Check if you have npm in your computer, and then install the dependencies using:
