@@ -7,7 +7,7 @@ Hey guys. In this repo I'm just improving my React Native skills by trying to bu
 ![login](login-page.jpg)
 ![home](home-page.jpg)
 
-## To Do:
+## To Do :pushpin:
 
 - [x] ~~Create Login Screen~~
 - [x] ~~Create Home Screen~~
